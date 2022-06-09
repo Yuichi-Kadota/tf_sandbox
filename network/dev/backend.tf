@@ -4,6 +4,7 @@ provider "aws" {
     tags = {
       createdBy = "terraform"
       service   = "sandbox"
+      env       = "dev"
     }
   }
 }
