@@ -12,14 +12,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "kd-tf-sandbox"
-    key    = "network/terraform.tfstate"
+    key    = "dev/network/terraform.tfstate"
     region = "ap-northeast-1"
-  }
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "4.13.0"
-    }
   }
 }
