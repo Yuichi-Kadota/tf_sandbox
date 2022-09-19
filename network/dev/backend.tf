@@ -12,7 +12,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket = "kd-tf-sandbox"
-    key    = "network/terraform.tfstate"
+    key    = "dev/network/terraform.tfstate"
     region = "ap-northeast-1"
   }
 }
